@@ -34,8 +34,7 @@ con <- dbConnect(
 # 3. Crear vector al zip en donde se tiene la información
 #=================================================================
 
-envi <- "C:\\Users\\EdwinHéctorPinedaLóp\\OneDrive - Centro Federal de Conciliación y Registro Laboral\\Escritorio\\Analista_A\\conjunto_de_datos_envi_2020_csv.zip"
-
+envi <- mi dirección de almacenamiento
 #=================================================================
 # 2. FUNCIONES AUXILIARES PARA SQL
 #=================================================================
