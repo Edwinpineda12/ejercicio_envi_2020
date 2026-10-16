@@ -1,6 +1,8 @@
 Procesamiento de datos ENVI 2020
+
 Descripción
 Este repositorio contiene scripts en R para procesar los datos de ENVI 2020 utilizando DuckDB y paquetes del ecosistema R.
+
 
 Requisitos
 R instalado en la computadora.
@@ -20,12 +22,15 @@ instalar <- paquetes[
 if (length(instalar) > 0) {
   install.packages(instalar)
 }
+
 Uso
 Descarga o clona este repositorio.
 Coloca el ZIP de datos en tú carpeta del proyecto.
 Abre el proyecto en RStudio.
 Ejecuta el script de tratamiento.
 La base DuckDB se generará localmente durante el procesamiento, según la configuración del script.
+
+
 Datos
 Puedes acceder a ellos desde https://www.inegi.org.mx/programas/envi/2020/#datos_abiertos 
 
