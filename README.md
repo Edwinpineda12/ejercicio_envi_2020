@@ -36,3 +36,7 @@ Puedes acceder a ellos desde https://www.inegi.org.mx/programas/envi/2020/#datos
 
 Reproducibilidad
 Los resultados pueden variar según las versiones de R, los paquetes utilizados y los archivos de entrada.
+
+Puedes consultar la aplicación interactiva del proyecto ENVI 2020:
+
+https://edwin-pineda-prueba-dashboards-mx-01-r.shinyapps.io/app_v1/
