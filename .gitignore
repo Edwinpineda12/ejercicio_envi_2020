@@ -1,0 +1,5 @@
+.Rhistory
+.RData
+.Rproj.user/
+envi_2020.duckdb
+envi_2020.duckdb.wal
