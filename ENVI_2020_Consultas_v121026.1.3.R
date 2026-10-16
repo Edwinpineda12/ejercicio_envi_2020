@@ -35,6 +35,14 @@ con <- dbConnect(
 #=================================================================
 
 envi <- "conjunto_de_datos_envi_2020_csv".zip
+
+if (!file.exists(envi)) {
+  stop(
+    "No se encontró el archivo ZIP: ", envi,
+    "\nColoca el archivo en la carpeta del proyecto."
+  )
+}
+
 #=================================================================
 # 2. FUNCIONES AUXILIARES PARA SQL
 #=================================================================
