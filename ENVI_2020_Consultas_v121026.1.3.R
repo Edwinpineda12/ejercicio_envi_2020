@@ -2798,7 +2798,7 @@ if (length(faltantes_hogar) == 0) {
 
 
 #=================================================================
-# 60. RECUPERAR VARIABLES DE LA TABLA DE DEMANDA: (REVISAR ESTAS)
+# 60. RECUPERAR VARIABLES DE LA TABLA DE DEMANDA
 #=================================================================
 
 demanda_detallada <- DBI::dbGetQuery(
