@@ -622,13 +622,6 @@ mat_vivienda <- mat_vivienda %>%
     )
   )
 
-#================================================================
-# POBLACIÓN DE BAJOS INGRESOS: DE ACUERDO CO LA DEFINICIÓN DEL 
-# DOCUMENTO: Metodología para el cálculo de la población potencial,
-# objeto y prioritaria, Programa de Vivienda Social S-177, 2026.
-#=================================================================
-
-
 #=================================================================
 # 16. INDICADOR EXPLORATORIO DE REZAGO HABITACIONAL
 #=================================================================
@@ -1207,7 +1200,7 @@ print(resumen_estratos)
 
 
 #=================================================================
-# 33. ESTIMACIONES CON EL DISEÑO MUESTRAL (OPCIONAL)
+# 33. ESTIMACIONES CON EL DISEÑO MUESTRAL 
 #=================================================================
 
 if (requireNamespace("survey", quietly = TRUE)) {
@@ -1499,7 +1492,7 @@ grafica_matriz_territorial <- ggplot(
     title = "Rezago por entidad y tamaño de localidad",
     x = "Tamaño de localidad",
     y = "Entidad federativa",
-    caption = "Usar etiquetas oficiales del catálogo ENVI."
+    caption = "Localidades por tamaño."
   ) +
   theme_minimal(base_size = 10) +
   theme(
@@ -1600,7 +1593,7 @@ grafica_rezago <- ggplot(
     subtitle = "Porcentaje ponderado entre viviendas clasificables",
     x = "Condición de rezago",
     y = "Porcentaje",
-    caption = "Indicador exploratorio; no equivale a una clasificación oficial."
+    caption = "Indicador exploratorio."
   ) +
   theme_minimal(base_size = 12) +
   theme(
@@ -2258,8 +2251,7 @@ print(codigos_sin_catalogo)
 
 if (nrow(codigos_sin_catalogo) > 0) {
   warning(
-    "Hay códigos Tam_Loc que no están en el catálogo. ",
-    "Revisa sus valores antes de interpretar los resultados."
+    "Hay códigos Tam_Loc que no están en el catálogo. "
   )
 }
 
@@ -2906,7 +2898,8 @@ readr::write_csv(
 )
 
 #=================================================================
-# 62. PREPARAR UNA NOTA METODOLÓGICA
+# 62. PREPARAR UNA NOTA METODOLÓGICA PARA LA CONSULTA DE LA INFORMACIÓN
+#      OBTENIDA
 #=================================================================
 
 nota_metodologica <- c(
